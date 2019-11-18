@@ -48,5 +48,5 @@ echo "Port Scanning - Nmap"
 nmap -iL probed.txt -oA scans/scanned.txt
 
 echo "Scanning - Eyewitness"
-eyewitness -f $pwd/probed.txt -d $1 --all-protocols
+eyewitness -f $pwd/probed.txt -d $1 --web
 mv /usr/share/eyewitness/$1 eyewitness/$1
